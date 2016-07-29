@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('new','NewsController@index');
+Route::get('new/create','NewsController@create');
+Route::post('new','NewsController@store');
+Route::get('new/{id}/show','NewsController@show');
+Route::get('new/{type}/type','NewsController@filter');
