@@ -18,7 +18,13 @@
 			</tr>
 			<tr>
 				<td><label for="type">ประเภทข่าว :</label></td>
-				<td>{{ $new->type }}</td>
+				@if ($new->type == 1)
+				<td>ข่าวประชาสัมพันธ์</td>
+				@elseif ($new->type == 2)
+				<td>ข่าวกิจจกรรม</td>
+				@elseif ($new->type == 3)
+				<td>ข่าวการศึกษา</td>
+				@endif
 			</tr>
 			<tr>
 				<td><label for="dates">วันที่ประกาศ :</label></td>

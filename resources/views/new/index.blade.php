@@ -34,7 +34,7 @@
 				<td>ข่าวประชาสัมพันธ์</td>
 				@elseif ($new->type == 2)
 				<td>ข่าวกิจจกรรม</td>
-				@elseif ($new->type == 2)
+				@elseif ($new->type == 3)
 				<td>ข่าวการศึกษา</td>
 				@endif
 				<td>{{ $new->user }}</td>
